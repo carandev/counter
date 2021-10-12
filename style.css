@@ -1,8 +1,52 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+
+  height: 100vh;
+  background: #223;
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  font-size: 7rem;
+  color: #fff;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: flex .5s ease-in-out;
+}
+
+input[type="button"] {
+  padding: .5rem 1rem;
+  margin: 1rem;
+
+  font-size: 2rem;
+
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+  outline: none;
+
+  transition: all .2s ease-in-out;
+}
+
+input[type="button"]:hover {
+  background: #fff;
+  cursor: pointer;
+  color: #223;
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  div {
+    flex-direction: column;
+  }
 }
